@@ -9,8 +9,8 @@ Has only been tested with Rails 5.
 
 Joins can be difficult to reason about in Arel (an SQL for that matter). Many joins can be replaced
 with set operations which are much simpler beasts, may offer performance gains, and have consistent
-mathematical properties. But these operations while present in Arel are lacking in ActiveRecord. This
-module attempts to correct that oversight.
+mathematical properties. But these operations while present in Arel are missing in ActiveRecord. This
+module attempts to correct this lack.
 
 # Installation
 
