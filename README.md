@@ -1,5 +1,3 @@
-![Ruby](https://github.com/delonnewman/activerecord-setops/workflows/Ruby/badge.svg)
-
 # ActiveRecord::Setops
 
 Union, Intersect, and Difference set operations for ActiveRecord (also, SQL's UnionAll).
