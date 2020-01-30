@@ -1,6 +1,6 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "activerecord/setops/version"
+require "active_record/setops/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "activerecord-setops"
@@ -38,7 +38,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "activerecord", "~> 5.2.4"
   spec.add_development_dependency "gen-test", "~> 0.1.1"
   spec.add_development_dependency "contracts-gen", "~> 0.1.1"
+  spec.add_development_dependency "activerecord", "~> 5.2.4"
+  spec.add_development_dependency "sqlite3", "~> 1.4.2"
 end

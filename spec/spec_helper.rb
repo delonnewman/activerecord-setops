@@ -1,6 +1,8 @@
 require "bundler/setup"
-require "activerecord"
-require "activerecord/setops"
+require "sqlite3"
+require "active_record"
+require "active_record/setops"
+require "gen/test"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

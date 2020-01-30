@@ -1,4 +1,4 @@
-require "activerecord/setops/version"
+require "active_record/setops/version"
 
 module ActiveRecord
   class Relation
