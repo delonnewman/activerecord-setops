@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["contact@delonnewman.name"]
 
   spec.summary       = %q{Set operations for ActiveRecord}
-  spec.description   = %q{Union, Intesection, and Difference operations for ActiveRecord}
+  spec.description   = %q{Union, Intersection, and Difference operations for ActiveRecord}
   spec.homepage      = "https://github.com/delonnewman/activerecord-setops#readme"
   spec.license       = "MIT"
 
@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
     spec.metadata["homepage_uri"] = spec.homepage
     spec.metadata["source_code_uri"] = "https://github.com/delonnewman/activerecord-setops"
     spec.metadata["changelog_uri"] = "https://github.com/delonnewman/activerecord-setops#changelog"
+    spec.metadata["documentation_uri"] = 'https://www.rubydoc.info/gems/activerecord-setops'
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."

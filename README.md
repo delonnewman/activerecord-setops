@@ -1,3 +1,5 @@
+![Ruby](https://github.com/delonnewman/activerecord-setops/workflows/Ruby/badge.svg)
+
 # ActiveRecord::Setops
 
 Union, Intersect, and Difference set operations for ActiveRecord (also, SQL's UnionAll).
@@ -6,7 +8,9 @@ Has only been tested with Rails 5.
 # Why?
 
 Joins can be difficult to reason about in Arel (an SQL for that matter). Many joins can be replaced
-with set operations which are much simplers beasts and have consistent mathetical properties.
+with set operations which are much simpler beasts, may offer performance gains, and have consistent
+mathematical properties. But these operations while present in Arel are lacking in ActiveRecord. This
+module attempts to correct that oversight.
 
 # Installation
 
