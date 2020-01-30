@@ -5,6 +5,15 @@
 Union, Intersect, and Difference set operations for ActiveRecord (also, SQL's UnionAll).
 Has only been tested with Rails 5.
 
+# Synopsis
+
+```ruby
+class Student < ActiveRecord::Base; end
+class Employee < ActiveRecord::Base; end
+
+(Student.select(:name, :birth_date) | Employee.select(:name, :birth_date)).where("name like John%")
+```
+
 # Why?
 
 Joins can be difficult to reason about in Arel (an SQL for that matter). Many joins can be replaced
@@ -27,15 +36,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install activerecord-setops
-
-# Synopsis
-
-```ruby
-class Student < ActiveRecord::Base; end
-class Employee < ActiveRecord::Base; end
-
-(Student.select(:name, :birth_date) | Employee.select(:name, :birth_date)).where("name like John%")
-```
 
 # See Also
 
