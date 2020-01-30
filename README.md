@@ -7,7 +7,7 @@ Union, Intersect, and Difference set operations for ActiveRecord (also, SQL's Un
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'activerecord-setoperations'
+gem 'activerecord-setops'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install activerecord-setoperations
+    $ gem install activerecord-setops
 
 # Synopsis
 

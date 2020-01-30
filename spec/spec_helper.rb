@@ -3,6 +3,9 @@ require "sqlite3"
 require "active_record"
 require "active_record/setops"
 require "gen/test"
+require "contracts/gen"
+
+C = Contracts
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
