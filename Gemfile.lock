@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activerecord-setops (0.1.1)
+    activerecord-setops (0.1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -57,7 +57,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (~> 5.2.4)
+  activerecord (~> 5.0)
   activerecord-setops!
   bundler (~> 1.17)
   contracts-gen (~> 0.1.1)
