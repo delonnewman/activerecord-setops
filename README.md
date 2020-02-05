@@ -1,4 +1,5 @@
 ![Ruby](https://github.com/delonnewman/activerecord-setops/workflows/Ruby/badge.svg)
+[![Gem Version](https://badge.fury.io/rb/activerecord-setops.svg)](https://badge.fury.io/rb/activerecord-setops)
 
 # ActiveRecord::Setops
 
