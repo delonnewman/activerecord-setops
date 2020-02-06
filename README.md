@@ -17,7 +17,7 @@ class Employee < ActiveRecord::Base; end
 
 # Why?
 
-Joins can be difficult to reason about in Arel (an SQL for that matter). Many joins can be replaced
+Joins can be difficult to reason about in Arel (and SQL for that matter). Many joins can be replaced
 with set operations which are much simpler beasts, may offer performance gains, and have consistent
 mathematical properties. But these operations while present in Arel are missing in ActiveRecord. This
 module attempts to correct this lack.
