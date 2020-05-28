@@ -41,6 +41,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "gen-test", "~> 0.1.1"
   spec.add_development_dependency "contracts-gen", "~> 0.1.1"
-  spec.add_development_dependency "activerecord", "~> 5.0"
+  spec.add_development_dependency "activerecord", [">= 5.2.4.3", "< 6"]
+  spec.add_development_dependency "activesupport", [">= 5.2.4.3", "< 6"]
   spec.add_development_dependency "sqlite3", "~> 1.4.2"
 end
