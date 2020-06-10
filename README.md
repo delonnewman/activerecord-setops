@@ -42,3 +42,4 @@ Or install it yourself as:
 
 - [Sequel](http://sequel.jeremyevans.net)
 - [SQL Set Operations](https://en.wikipedia.org/wiki/Set_operations_(SQL))
+- [active_record_union](https://github.com/brianhempel/active_record_union)
