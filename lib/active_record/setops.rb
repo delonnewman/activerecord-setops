@@ -19,11 +19,10 @@ module ActiveRecord
     end
     alias & intersect
 
-    def except(other)
+    def difference(other)
       binary_operation(Arel::Nodes::Except, other)
     end
-    alias difference except
-    alias - except
+    alias - difference
 
     private
 

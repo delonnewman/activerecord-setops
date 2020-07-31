@@ -69,7 +69,7 @@ RSpec.describe ActiveRecord::Setops do
     end
   end
 
-  context 'except' do
+  context 'difference' do
     it 'should only include those records that are not in the other' do
       for_all C::ArrayOf[RecordAttrs] do |attrs|
         Student.create!(attrs)
