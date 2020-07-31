@@ -11,3 +11,4 @@
 .rspec_status
 spec/spec.db
 tags
+Gemfile.lock
