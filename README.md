@@ -40,7 +40,7 @@ Or install it yourself as:
 
 # Non-Installation
 
-If you'd like the functionality, but would prefer to avoid yet another dependency, please fill free to paste the following code into your nearest lib directory, I'm certain it's not perfect but it has been [tested](spec/active_record/setops_spec.rb) with Rails 5, and is being used in with three of my own projects in production.
+If you'd like the functionality, but would prefer to avoid yet another dependency, please fill free to paste the following code into your nearest lib directory, I'm certain it's not perfect but it has been [tested](spec/active_record/setops_spec.rb) with Rails 5, and is being used in production.
 
 ```ruby
 module ActiveRecord
