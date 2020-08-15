@@ -38,6 +38,44 @@ Or install it yourself as:
 
     $ gem install activerecord-setops
 
+# Non-Installation
+
+If you'd like the functionality, but would prefer to avoid yet another dependency, please fill free to paste the following code into your nearest lib directory, I'm certain it's not perfect but it has been [tested](spec/active_record/setops_spec.rb) with Rails 5, and is being used in with three of my own projects in production.
+
+```ruby
+module ActiveRecord
+  class Relation
+    # Performs a set theoretic union works like `Array#+` but puts the load on the database
+    # and allows you to chain more relation operations.
+    def union(other)
+      binary_operation(Arel::Nodes::Union, other)
+    end
+    alias | union
+    alias + union
+
+    def union_all(other)
+      binary_operation(Arel::Nodes::UnionAll, other)
+    end
+
+    def intersect(other)
+      binary_operation(Arel::Nodes::Intersect, other)
+    end
+    alias & intersect
+
+    def difference(other)
+      binary_operation(Arel::Nodes::Except, other)
+    end
+    alias - difference
+
+    private
+
+    def binary_operation(op_class, other)
+      @klass.unscoped.from(Arel::Nodes::TableAlias.new(op_class.new(self.arel.ast, other.arel.ast), @klass.arel_table.name))
+    end
+  end
+end
+```
+
 # See Also
 
 - [Sequel](http://sequel.jeremyevans.net)
