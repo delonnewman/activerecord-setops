@@ -8,11 +8,11 @@ module ActiveRecord
       binary_operation(Arel::Nodes::Union, other)
     end
     alias | union
-    alias + union
 
     def union_all(other)
       binary_operation(Arel::Nodes::UnionAll, other)
     end
+    alias + union_all
 
     def intersect(other)
       binary_operation(Arel::Nodes::Intersect, other)
