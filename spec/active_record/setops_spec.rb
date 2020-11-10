@@ -35,8 +35,21 @@ RSpec.describe ActiveRecord::Setops do
         end
       end
     end
-    
-    after do
+  end
+
+  context 'union_all' do
+    it 'should have the same cardinatilty as the two relations combined' do
+      for_all (30..50), (10..70) do |n, m|
+        TestRecord.transaction do
+          n.times { Student.generate.save! }
+          m.times { Employee.generate.save! }
+        end
+        expect((Student.all + Employee.all).count).to eq(Student.count + Employee.count)
+        TestRecord.transaction do
+          Student.delete_all
+          Employee.delete_all
+        end
+      end
     end
   end
 
