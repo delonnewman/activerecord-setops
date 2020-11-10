@@ -45,17 +45,15 @@ If you'd like the functionality, but would prefer to avoid yet another dependenc
 ```ruby
 module ActiveRecord
   class Relation
-    # Performs a set theoretic union works like `Array#+` but puts the load on the database
-    # and allows you to chain more relation operations.
     def union(other)
       binary_operation(Arel::Nodes::Union, other)
     end
     alias | union
-    alias + union
 
     def union_all(other)
       binary_operation(Arel::Nodes::UnionAll, other)
     end
+    alias + union_all
 
     def intersect(other)
       binary_operation(Arel::Nodes::Intersect, other)
