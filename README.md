@@ -79,3 +79,7 @@ end
 - [Sequel](http://sequel.jeremyevans.net)
 - [SQL Set Operations](https://en.wikipedia.org/wiki/Set_operations_(SQL))
 - [active_record_union](https://github.com/brianhempel/active_record_union)
+
+# Support
+
+<a href="https://www.buymeacoffee.com/delonnewman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
