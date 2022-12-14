@@ -1,5 +1,8 @@
 ![Ruby](https://github.com/delonnewman/activerecord-setops/workflows/Ruby/badge.svg)
 [![Gem Version](https://badge.fury.io/rb/activerecord-setops.svg)](https://badge.fury.io/rb/activerecord-setops)
+[![Contact me on Codementor](https://www.codementor.io/m-badges/delonnewman/im-a-cm-b.svg)](https://www.codementor.io/@delonnewman?refer=badge)
+
+<a href="https://www.buymeacoffee.com/delonnewman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 # ActiveRecord::Setops
 
@@ -81,7 +84,3 @@ end
 - [active_record_union](https://github.com/brianhempel/active_record_union)
 
 # Support
-
-<a href="https://www.buymeacoffee.com/delonnewman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-[![Contact me on Codementor](https://www.codementor.io/m-badges/delonnewman/im-a-cm-b.svg)](https://www.codementor.io/@delonnewman?refer=badge)
