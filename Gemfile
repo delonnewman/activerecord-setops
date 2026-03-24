@@ -8,6 +8,6 @@ gemspec
 gem 'gen-test', github: 'delonnewman/gen-test'
 gem 'contracts-gen', github: 'delonnewman/contracts-gen'
 
-gem 'activerecord', '~> 6.1'
-gem 'activesupport', '~> 6.1'
+gem 'activerecord', '~> 8.1'
+gem 'activesupport', '~> 8.1'
 gem 'sqlite3', '~> 1.4.2'
